@@ -57,7 +57,14 @@ sudo pacman -S --noconfirm \
   qt5ct \
   qt6ct \
   curl \
-  lazygit
+  lazygit \
+  python3 \
+  python-gobject \
+  pacman-contrib \
+  viewnior \
+  lynx \
+  thunderbird \
+  breeze 
 
 echo "\"installPacmanPackages.sh\" script finished!"
 echo "If this script was run as part of the full installation process, errors may not have been shown yet, they'll be shown in the next step!"
