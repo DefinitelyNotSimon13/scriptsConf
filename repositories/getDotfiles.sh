@@ -1,9 +1,9 @@
 #! /usr/bin/bash
 
 read -p "Are you sure? This script will remove all existing config files that clash with new configs! (nvim, hypr, waybar, etc...)" -n 1 -r
-rm -rf ~/tmpInstall8888
-mkdir ~/tmpInstall8888
-cd ~/tmpInstall8888
+rm -rf ~/.installCache/dotfiles/main
+mkdir ~/.installCache/dotfiles/main
+cd ~/.installCache/dotfiles/main
 git clone --recurse-submodules "https://github.com/DefinitelyNotSimon13/Catppuccin-Dotfiles.git"
 
 
@@ -21,4 +21,4 @@ git clone --recurse-submodules "https://github.com/DefinitelyNotSimon13/Catppucc
 # rm ~/.zshrc
 # rm .p10k.zsh
 
-# rm -r ~/tmpInstall8888
+# rm -r ~/.installCache/dotfiles/main
