@@ -73,7 +73,7 @@ echo "Installed Pacman packages!"
 read -p "Enter to continue"
 
 # enable sddm
-systemctl enable sddm.service
+sudo systemctl enable sddm.service
 echo "Enabled sddm.service"
 read -p "Enter to continue"
 # Install Yay
