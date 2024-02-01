@@ -13,6 +13,7 @@ sudo pacman -S --noconfirm \
   tmux \
   zsh \
   rofi \
+  breeze \
   waybar \
   pulseaudio \
   neovim \
