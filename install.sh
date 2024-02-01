@@ -76,6 +76,10 @@ read -p "Enter to continue"
 sudo systemctl enable sddm.service
 echo "Enabled sddm.service"
 read -p "Enter to continue"
+
+# install libtmux
+pip install libtmux --break-system-packages
+
 # Install Yay
 echo "Installing Yay..."
 chmod +x ${LOC}/packages/installYay.sh
