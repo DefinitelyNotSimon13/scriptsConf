@@ -57,6 +57,7 @@ echo "Opening nvim..."
 sudo nvim /etc/default/grub
 read -p "Press enter to continue!"
 sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-mkconfig -o /boot/efi/EFI/arch/grub.cfg
 echo "Grub config has been outputted to \"/boot/grub/grub.cfg\""
 echo "If you need the config somewhere else, please manually run"
 echo "\"sudo grub-mkconfig -o [path/to/grub.cfg]\""
