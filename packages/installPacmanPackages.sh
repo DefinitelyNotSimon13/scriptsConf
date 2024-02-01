@@ -56,7 +56,7 @@ sudo pacman -S --noconfirm \
   qt5ct \
   qt6ct \
   curl \
-  curl 
+  lazygit
 
 echo "\"installPacmanPackages.sh\" script finished!"
 echo "If this script was run as part of the full installation process, errors may not have been shown yet, they'll be shown in the next step!"
