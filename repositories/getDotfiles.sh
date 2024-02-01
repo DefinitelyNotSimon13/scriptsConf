@@ -13,13 +13,6 @@ echo "Cloning git repo..."
 git clone --recurse-submodules "https://github.com/DefinitelyNotSimon13/Catppuccin-Dotfiles.git"
 echo "Git repo cloned!"
 read -p "Press enter to continue"
-# Delete files I dont immediatly want in the home dir (i know they'll get pulled later if .git remains, just feels cleaner this way)
-rm -rf Catppuccin-Dotfiles/assets
-rm -f Catppuccin-Dotfiles/CODE_OF_CONDUCT.md
-rm -f Catppuccin-Dotfiles/LICENSE.txt
-rm -f Catppuccin-Dotfiles/packages.md
-echo "Removed misc files"
-read -p "Press enter to continue"
 # Backup all files that'll be deleted
 mkdir ~/.backup >/dev/null 2>&1
 echo "Created ~/.backup if it didn't exist before"
