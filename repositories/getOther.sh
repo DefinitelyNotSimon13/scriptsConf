@@ -93,7 +93,7 @@ read -p "Press enter to continue"
 
 # Oh my zsh
 echo "Installing oh-my-zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "Installed oh-my-zsh!"
 read -p "Press enter to continue"
 
