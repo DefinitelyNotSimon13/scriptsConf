@@ -23,6 +23,11 @@ echo "changed dir do ~/.installCache/dotfiles"
 touch INSTALLATION_RUNNING.lock
 echo "INSTALLATION_RUNNING.lock created"
 
+# Install Pacman Packages
+# WARNING- Currently no output so nobody fucking knows if it worked
+echo "Installing pacman packages..."
+sleep 1
+./utils/runWithDots.sh ./packages/installPacmanPackages.sh> /dev/null>2&1> /dev/null>2&1
 
 # rm INSTALLATION_RUNNING.lock
 # rm -rf ~/.installCache/dotfiles
