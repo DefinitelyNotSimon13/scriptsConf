@@ -8,6 +8,8 @@ git clone --recurse-submodules "https://github.com/DefinitelyNotSimon13/Catppucc
 
 
 #! TODO: Add line to make a backup into to tar file
+
+# Remove existing configs
 # rm -r ~/.config/hypr
 # rm -r ~/.config/waybar
 # rm -r ~/.config/dunst
@@ -20,5 +22,7 @@ git clone --recurse-submodules "https://github.com/DefinitelyNotSimon13/Catppucc
 # rm -r ~/.zsh/
 # rm ~/.zshrc
 # rm .p10k.zsh
+
+
 
 # rm -r ~/.installCache/dotfiles/main
