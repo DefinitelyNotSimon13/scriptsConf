@@ -78,8 +78,8 @@ echo "nvim will open automatically, please add the following two lines to the fi
 echo "[Theme]"
 echo "Current=catppuccin-flavour"
 sleep 0.5
-sudo nvim /etc/sddm.config
 read -p "Press enter to continue!"
+sudo nvim /etc/sddm.conf
 echo "Catppuccin sddm theme installed!"
 read -p "Press enter to continue"
 
