@@ -1,4 +1,9 @@
-sudo pacman -S \
+echo "Starting \"installPacmanPackages.sh\" script"
+echo "Due to the experimental state of all the scripts, I've opted to add an increaed amount of confirmations (\"Press enter to continue\"). This will be changed (an option added to remove) later."
+  
+read -p "Press enter to continue"
+
+sudo pacman -S --noconfirm \
   --needed base-devel \
   sddm \
   ttf-jetbrains-mono-nerd \
@@ -48,4 +53,9 @@ sudo pacman -S \
   cliphist \
   grim \
   qt5ct \
+  curl \
+  curl 
 
+echo "\"installPacmanPackages.sh\" script finished!"
+echo "If this script was run as part of the full installation process, errors may not have been shown yet, they'll be shown in the next step!"
+read -p "Press enter to continue"

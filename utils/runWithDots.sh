@@ -13,6 +13,6 @@ while kill -0 $!; do
   printf "$counter" > /dev/tty
   sleep 1
 done
-
+printf "Done!" > /dev/tty
 printf '\n' > /dev/tty
 
