@@ -57,8 +57,8 @@ echp "Removed existing configs!"
 read -p "Press enter to continue"
 # Finally move new files
 
-mv Catppuccin-Dotfiles/.* ~ -f
-mv Catppuccin-Dotfiles/* ~ -f
+cp Catppuccin-Dotfiles/.* ~ -r -f
+mv Catppuccin-Dotfiles/* ~ -r -f
 echo "Moved files from repository."
 echo "Main repository installation complete"
 

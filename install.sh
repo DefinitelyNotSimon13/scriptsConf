@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 LOCK_FILE=~/.installCache/dotfiles/INSTALLATION_RUNNING.lock
-LOC=~/scripts/
+LOC=~/scripts
 
 # Check if running/smth wrong
 if test -f "$LOCK_FILE"; then
@@ -72,6 +72,10 @@ if [ -s log/errorLogPacman.txt ]; then
 echo "Installed Pacman packages!"
 read -p "Enter to continue"
 
+# enable sddm
+systemctl enable sddm.service
+echo "Enabled sddm.service"
+read -p "Enter to continue"
 # Install Yay
 echo "Installing Yay..."
 chmod +x ${LOC}/packages/installYay.sh
@@ -149,5 +153,6 @@ rm INSTALLATION_RUNNING.lock
 
 echo "The script is now completed!"
 echo "Maybe reboot? idk if needed, but probably not a bad idea"
-read -p "Enter to continue"
+read -p "Enter to reboot - <Ctrl-c> to not"
+sudo reboot now
 # rm -rf ~/.installCache/dotfiles

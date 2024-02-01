@@ -5,6 +5,7 @@ read -p "Press enter to continue"
 
 sudo pacman -S --noconfirm \
   --needed base-devel \
+  wayland \
   sddm \
   ttf-jetbrains-mono-nerd \
   kitty \
@@ -32,7 +33,7 @@ sudo pacman -S --noconfirm \
   os-prober \
   qt5-graphicaleffects \
   qt5-svg \
-  qt5-quickcontrol2 \
+  qt5-quickcontrols2 \
   neofetch \
   papirus-icon-theme \
   mpd \

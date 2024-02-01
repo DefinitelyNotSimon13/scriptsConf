@@ -19,10 +19,12 @@ read -p "Press enter to continue"
 # Catpuccin qt5 theme -worked the first time at least
 echo "Installing Catppuccin Qt5 theme..."
 git clone "https://github.com/catppuccin/qt5ct.git"
+mkdir ~/.config/qt5ct
 mkdir ~/.config/qt5ct/colors
 mv qt5ct/themes/Catppuccin-Mocha.conf ~/.config/qt5ct/colors/ -f
+echo "The script will continue once you close qt5ct"
+echo "This wont work if you are installing first time with no window manager or so, so do later"
 read -p "Please set the theme in qt5ct - if it isnt there, thats an issue lol - Press enter to open qt5ct!"
-read "The script will continue once you close qt5ct"
 qt5ct
 rm -rf qt5ct
 echo "Installed Catppuccin Qt5 theme!"
@@ -93,7 +95,7 @@ read -p "Press enter to continue"
 
 # Oh my zsh
 echo "Installing oh-my-zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 echo "Installed oh-my-zsh!"
 read -p "Press enter to continue"
 
@@ -105,7 +107,7 @@ read -p "Press enter to continue"
 
 # zsh-autosuggenstions
 echo "Installing zsh-autosuggenstions..."
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggenstions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 echo "Installed zsh-autosuggenstions!"
 read -p "Press enter to continue"
 
@@ -120,6 +122,13 @@ echo "Installing Catppuccin zsh-syntax-highlighting theme..."
 git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
 cp -v zsh-syntax-highlighting/theme/catppuccin_mocha-zsh-syntax-highlighting.zsh ~/.zsh/
 echo "Installed Catppuccin zsh-syntax-highlighting theme!"
+read -p "Press enter to continue"
+
+# tmux tpm
+echo "Installing tmux tpm..."
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+echo "You'll need to install the plugins later! <Leader+I>"
+echo "Installed tmux tpm!"
 read -p "Press enter to continue"
 
 echo "\"getOther.sh\" script complete"

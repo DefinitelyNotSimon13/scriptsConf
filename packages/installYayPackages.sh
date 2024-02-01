@@ -5,10 +5,9 @@ echo "Due to the experimental state of all the scripts, I've opted to add an inc
   
 read -p "Press enter to continue"
 
-yay -S -Yg \
-  hyprpicker \
-  ddcci-driver-linx \
-  catppuccin-gtk-theme-mocha 
+yay -S hyprpicker
+yay -S ddcci-driver-linux
+yay -S catppuccin-gtk-theme-mocha 
 
 echo "Finished \"installYayPackages.sh\" script"
 read -p "Press enter to continue"
