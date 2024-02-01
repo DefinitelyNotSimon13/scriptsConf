@@ -54,6 +54,7 @@ sudo pacman -S --noconfirm \
   cliphist \
   grim \
   qt5ct \
+  qt6ct \
   curl \
   curl 
 
