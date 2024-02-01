@@ -53,12 +53,12 @@ rm -r ~/.config/tmux>/dev/null 2>&1
 rm -r ~/.zsh/>/dev/null 2>&1
 rm ~/.zshrc>/dev/null 2>&1
 rm .p10k.zsh>/dev/null 2>&1
-echp "Removed existing configs!"
+echo "Removed existing configs!"
 read -p "Press enter to continue"
 # Finally move new files
 
 cp Catppuccin-Dotfiles/.* ~ -r -f
-mv Catppuccin-Dotfiles/* ~ -r -f
+cp Catppuccin-Dotfiles/* ~ -r -f
 echo "Moved files from repository."
 echo "Main repository installation complete"
 
