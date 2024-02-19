@@ -2,7 +2,7 @@
 
 printf "\e[33mStarting backup of home directory to backblaze\e[0m\n"
 
-FODLER_NAME="Backup_$(date +%d-%m-%Y_%H-%M-%S)"
+FODLER_NAME="BackupLaptop_$(date +%d-%m-%Y_%H-%M-%S)"
 
 printf "\e[33mCreating folder: $FODLER_NAME\e[0m\n"
 mkdir /home/simon/.remoteBackup/$FODLER_NAME
@@ -20,7 +20,7 @@ cp -r /home/simon/backupHome.sh /home/simon/.remoteBackup/"$FODLER_NAME"
 
 printf "\e[33mSyncing to backblaze\e[0m\n"
 rclone sync /home/simon/.remoteBackup backblaze:ArchHomeBackup\
-  --track-renames --progress --verbose --use-json-log \
+  --progress
 
 printf "\e[33mZipping folder: $FODLER_NAME\e[0m\n"
 zip -r /home/simon/.remoteBackupZip/"$FODLER_NAME".zip \
@@ -28,7 +28,7 @@ zip -r /home/simon/.remoteBackupZip/"$FODLER_NAME".zip \
 
 printf "\e[33mSyncing zip to backblaze\e[0m\n"
 rclone sync /home/simon/.remoteBackupZip backblaze:ArchHomeBackupZip\
-  --track-renames --progress --verbose --use-json-log \
+  --progress
 
 SUBDIRS="$(find /home/simon/.config/ -maxdepth 1 -type d -print| wc -l)"
 
