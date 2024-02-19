@@ -16,7 +16,6 @@ cp -r /home/simon/4_Notes /home/simon/.remoteBackup/"$FODLER_NAME"
 cp -r /home/simon/Downloads /home/simon/.remoteBackup/"$FODLER_NAME"
 cp -r /home/simon/Documents /home/simon/.remoteBackup/"$FODLER_NAME"
 cp -r /home/simon/backupHome.sh /home/simon/.remoteBackup/"$FODLER_NAME"
-touch /home/simon/.remoteBackup/"$FOLDER_NAME"/dotfiles.txt
 echo "Dotfiles can be found on github" > /home/simon/.remoteBackup/"$FODLER_NAME"/dotfiles.txt
 
 printf "\e[33mSyncing to backblaze\e[0m\n"
